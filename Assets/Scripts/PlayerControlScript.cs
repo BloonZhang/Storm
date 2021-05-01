@@ -12,14 +12,20 @@ public class PlayerControlScript : MonoBehaviour
     // like SpriteRenderer, CircleCollider2D, RigidBody2D, etc.
     private Rigidbody2D my_Rigidbody2D;
 
+    public Camera cam;
+
     // Editable variables
     // Change these in the unity inspector. Changing it here will only change the default value
-     public float moveSpeedMultiplier = 5f;
+    public float moveSpeedMultiplier = 5f;
+
+    //TODO equip weapon
+    // private Weapon equippedWeapon;
 
     // helper varaibles
     private float horizontalMove = 0f;
     private float verticalMove = 0f;
     private Vector3 m_Velocity = Vector3.zero; // This is used in Move(). Copied from a tutorial
+    Vector2 mousePos;
 
     // ***** MonoBehaviour methods *****
     // Awake is called before the first frame update
@@ -34,7 +40,8 @@ public class PlayerControlScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       // equippedWeapon = gameObject.AddComponent(typeof(Weapon)) as Weapon;
+    //TODO make weapon class with overwriteable attack functions
     }
 
     // Update is called once per frame
@@ -44,6 +51,7 @@ public class PlayerControlScript : MonoBehaviour
         // Get player input for movement. This will be used in FixedUpdate()
         horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeedMultiplier;
         verticalMove = Input.GetAxisRaw("Vertical") * moveSpeedMultiplier;
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         
     }
 
@@ -64,5 +72,14 @@ public class PlayerControlScript : MonoBehaviour
         // Movement is done through the physics engine, not manually changing the position
         Vector3 targetVelocity = new Vector2(horizontalMove, verticalMove);
         my_Rigidbody2D.velocity = Vector3.SmoothDamp(my_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, 0.05f);
+
+        //Rotation
+        Vector2 lookDir = mousePos - my_Rigidbody2D.position;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+        my_Rigidbody2D.rotation = angle;
+
     }
+
+
+
 }
