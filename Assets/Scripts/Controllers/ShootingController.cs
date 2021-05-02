@@ -6,12 +6,14 @@ public class ShootingController : MonoBehaviour
 {
     // GameObject/Component variables
 	public Transform firePoint;
-	public GameObject bulletPrefab;
+	public GameObject bulletPrefab;    // Assigned through SO
 
-    // Editable variables
-    // TODO: assign these values using ScriptableObjects, instead of manually
-	public float bulletForce = 20f;
-    public float bulletsPerSecond = 3f;
+    // ScriptableObject variables
+    private string my_name;
+    private float my_damage;
+	private float my_bulletForce;
+    private float my_bulletsPerSecond;
+    private Sprite my_sprite;
 
     // helper variables
     private float timer_bulletsPerSecond = 0f;
@@ -25,7 +27,7 @@ public class ShootingController : MonoBehaviour
         // Fire input
     	if(Input.GetButton("Fire1")){
             // Check to see if we can fire
-            if (timer_bulletsPerSecond > (1f/bulletsPerSecond))
+            if (timer_bulletsPerSecond > (1f/my_bulletsPerSecond))
             {
                 timer_bulletsPerSecond = 0f;
     		    Shoot();
@@ -33,9 +35,19 @@ public class ShootingController : MonoBehaviour
         }
     }
 
-    void Shoot(){
-    		GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-    		Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-    		rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-    }	
+    // Helper methods
+    void Shoot()
+    {
+		GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+		Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+		rb.AddForce(firePoint.up * my_bulletForce, ForceMode2D.Impulse);
+    }
+    public void EquipNewWeapon(Gun newWeapon)  // TODO: make it accept more than just Gun  // TODO: currently public for using button to test
+    {
+        my_name = newWeapon.name;
+        my_damage = newWeapon.damage;
+        my_bulletForce = newWeapon.bulletForce;
+        my_bulletsPerSecond = newWeapon.bulletsPerSecond;
+        my_sprite = newWeapon.sprite; GetComponent<SpriteRenderer>().sprite = my_sprite;
+    }
 }

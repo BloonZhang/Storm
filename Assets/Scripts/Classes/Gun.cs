@@ -9,5 +9,9 @@ public class Gun : Weapon
     public BulletController bulletPrefab;
 
     // basic variables
+    public float bulletForce;
     public float bulletsPerSecond;
+
+    // methods
+    // TODO: Shoot();
 }
