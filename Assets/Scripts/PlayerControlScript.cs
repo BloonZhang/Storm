@@ -12,7 +12,7 @@ public class PlayerControlScript : MonoBehaviour
     // like SpriteRenderer, CircleCollider2D, RigidBody2D, etc.
     private Rigidbody2D my_Rigidbody2D;
 
-    public Camera cam;
+    // public Camera cam; // For now we can just use Camera.main. Uncomment once we get multiple cameras
 
     // Editable variables
     // Change these in the unity inspector. Changing it here will only change the default value
@@ -51,8 +51,8 @@ public class PlayerControlScript : MonoBehaviour
         // Get player input for movement. This will be used in FixedUpdate()
         horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeedMultiplier;
         verticalMove = Input.GetAxisRaw("Vertical") * moveSpeedMultiplier;
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        
+        //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     // FixedUpdate is called in-step with the physics engine
