@@ -1,2 +1,2 @@
-"when it's trash, put it in the trash"
+"Do you have the Purple Sauce?"
 -Socrates
