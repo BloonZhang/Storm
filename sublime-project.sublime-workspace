@@ -1,0 +1,656 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"camera",
+				"cameraXPosition"
+			],
+			[
+				"pixe",
+				"pixelUnits"
+			],
+			[
+				"curre",
+				"currentlyHealing"
+			],
+			[
+				"invin",
+				"invincibilityTimer"
+			],
+			[
+				"Up",
+				"UpdateAIPattern"
+			],
+			[
+				"m_",
+				"m_BulletPattern"
+			],
+			[
+				"posi",
+				"positionYOffset"
+			],
+			[
+				"po",
+				"positionYOffset"
+			],
+			[
+				"snow",
+				"snowflakePrefab"
+			],
+			[
+				"R",
+				"Rigidbody2D"
+			],
+			[
+				"number",
+				"numberOfBulletsOnScreen"
+			],
+			[
+				"num",
+				"numberOfBulletsOnScreen"
+			],
+			[
+				"vertical",
+				"verticalMoveDistance"
+			],
+			[
+				"horizont",
+				"horizontalCameraSpeed"
+			],
+			[
+				"horizon",
+				"horizontalCameraSpeed"
+			],
+			[
+				"hori",
+				"horizontalMoveDistance"
+			],
+			[
+				"verti",
+				"verticalMoveDistance"
+			],
+			[
+				"hor",
+				"horizontalMoveDistance"
+			],
+			[
+				"message",
+				"MessageService"
+			],
+			[
+				"outer",
+				"outerTwelveAreas"
+			],
+			[
+				"anchor",
+				"anchoredPosition"
+			],
+			[
+				"spikes",
+				"spikesGood"
+			],
+			[
+				"custom",
+				"customSpawnPoint"
+			],
+			[
+				"Sprite",
+				"SpriteRenderer"
+			],
+			[
+				"Spri",
+				"SpriteRenderer"
+			],
+			[
+				"default",
+				"defaultSpawnPoint"
+			],
+			[
+				"Lever",
+				"LeverController"
+			],
+			[
+				"start",
+				"astroidStartingSpawnRate"
+			],
+			[
+				"slight",
+				"slightlyConfusedTime"
+			],
+			[
+				"Move",
+				"MovePlaceholder"
+			],
+			[
+				"Seri",
+				"SerializeField"
+			],
+			[
+				"Eve",
+				"EventCardController\tEventCardController"
+			],
+			[
+				"check",
+				"checkIfPaid()\tbool"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/Scripts/PlayerControlScript.cs",
+			"settings":
+			{
+				"buffer_size": 2900,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/ShootingController.cs",
+			"settings":
+			{
+				"buffer_size": 1139,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/BulletController.cs",
+			"settings":
+			{
+				"buffer_size": 732,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/CursorController.cs",
+			"settings":
+			{
+				"buffer_size": 558,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Bloon/Documents/Unity/Storm/Assets/Scripts"
+	],
+	"file_history":
+	[
+		"/C/Users/Bloon/Documents/Unity/Storm/Assets/Scripts/PlayerMovementScript.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Controllers/PlayerController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Controllers/DessertController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Controllers/CameraController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Controllers/EnemyController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Classes/Enemy.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Controllers/PlayerBulletController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Controllers/PlatformController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Classes/Dessert.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Controllers/GunController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Controllers/PlayerMovement.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Controllers/EnemyBulletController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Classes/AIPattern.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Classes/IdleAIPattern.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/Classes/BulletPattern.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/EnemyBulletController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/PlayerBulletController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/EnemyController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/PlayerMovement.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/PlayerController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/HitboxController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/SnowflakeController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/WeatherController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/PlatformController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/CharacterController2D.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/CameraController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2021.1/Assets/Scripts/GunController.cs",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/card-collection/src/index.css",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/card-collection/src/index.js",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/MasterDeckController.cs",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/my-app-react/src/index.css",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/my-app-react/src/index.js",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/card-collection/src/reportWebVitals.js",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/hero-search/hero-search.component.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/hero-search/hero-search.component.html",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/hero.service.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/heroes/heroes.component.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/heroes/heroes.component.html",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/hero-search/hero-search.component.css",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/dashboard/dashboard.component.html",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/heroes/heroes.component.css",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.html",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/in-memory-data.service.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/app.module.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/app-routing.module.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.css",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/app.component.html",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/app.component.css",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/dashboard/dashboard.component.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/dashboard/dashboard.component.css",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/messages/messages.component.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/message.service.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/messages/messages.component.html",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/mock-heroes.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/styles.css",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/app.component.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/hero.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/angular-tour-of-heroes/src/app/heroes/heroes.component.spec.ts",
+		"/C/Users/Bloon/Documents/Magic the Gathering/Code/New Text Document.py",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/DropArea.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/CardController.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/DeckController.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/Card.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/Draggable.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/Set.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/GameController.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/PlayerController.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/DelegateDictionary.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/ButtonTester.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/Deck.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/EnemyController.cs",
+		"/C/Users/Bloon/Documents/Unity/Card Game/Assets/Scripts/BattleController.cs",
+		"/C/Users/Bloon/Documents/Unity/MHWTimerApp/Assets/Scripts/ButtonScript.cs",
+		"/C/Users/Bloon/Pictures/clue 3.jpg",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/MeatController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/SceneController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/RulesManager.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/PlayerController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/FlashlightController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/CharacterController2D.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Library/PackageCache/com.unity.textmeshpro@3.0.0-preview.1/Scripts/Runtime/TMPro_UGUI_Private.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Library/PackageCache/com.unity.textmeshpro@3.0.0-preview.1/Scripts/Runtime/TMP_SubMeshUI.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/AudioManager.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/LeverController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/DoorScript.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/PortalController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Assets/Scripts/GhostController.cs",
+		"/C/Users/Bloon/Documents/Unity/Brackeys",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/Jam",
+		"/C/Users/Bloon/Documents/Unity/Brackeys Jam 2020.2/2020.2/Assets/Scripts/CharacterController2D.cs",
+		"/C/Users/Bloon/Documents/Unity/GMTK 2020/Assets/Scripts/AstroidManager.cs",
+		"/C/Users/Bloon/Documents/Unity/GMTK 2020/Assets/Scripts/TextParser.cs",
+		"/C/Users/Bloon/Documents/Unity/GMTK 2020/Assets/Scripts/GameManager.cs",
+		"/C/Users/Bloon/Documents/Unity/GMTK 2020/Assets/Scripts/TextManager.cs",
+		"/C/Users/Bloon/Documents/Unity/GMTK 2020/Assets/Scripts/BulletManager.cs",
+		"/C/Users/Bloon/Documents/Unity/GMTK 2020/Assets/Scripts/ShipManager.cs",
+		"/C/Users/Bloon/Documents/Unity/GMTK 2020/Assets/Scripts/UIManagerScript.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/GameController.cs",
+		"/C/Users/Bloon/Documents/Unity/BattleSave - Starter/Assets/Scripts/PlayerSettings.cs",
+		"/C/Users/Bloon/Documents/Unity/BattleSave - Starter/Assets/Scripts/Save.cs",
+		"/C/Users/Bloon/Documents/Unity/BattleSave - Starter/Assets/Scripts/Game.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/Draggable.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/DropZone.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/EventCard.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/EventCardController.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/OptionCard.cs",
+		"/C/Users/Bloon/Documents/Unity/BattleSave - Starter/Assets/Scripts/Robot.cs",
+		"/C/Users/Bloon/Documents/Unity/BattleSave - Starter/Assets/Scripts/Target.cs",
+		"/C/Users/Bloon/Documents/Unity/Save System/Assets/Scripts/SaveLoad.cs",
+		"/C/Users/Bloon/Documents/Unity/Save System/Assets/Scripts/Character.cs",
+		"/C/Users/Bloon/Documents/Unity/Save System/Assets/Scripts/Game.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/OptionCardController.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/OptionCardDropZone.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/Token.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/Assets/Scripts/EventCardDisplay.cs",
+		"/C/Users/Bloon/Downloads/uGUITools.cs",
+		"/C/Users/Bloon/Documents/Unity/LD46/LD46.sublime-project",
+		"/C/Users/Bloon/Documents/Unity/Warm up project/warm up project.sublime-project",
+		"/C/Users/Bloon/Documents/Unity/Warm up project/Assets/Scripts/TestScript.cs",
+		"/C/Users/Bloon/Documents/Sublime Projects/warm up project.sublime-project",
+		"/C/Users/Bloon/Documents/Unity/Warm up project/Warm up project.sln",
+		"/C/Users/Bloon/Documents/Unity/Warm up project/Packages/manifest.json",
+		"/C/Users/Bloon/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Dedicated Server/bin/scripts/launch_preconfigured_servers.bat",
+		"/C/Program Files (x86)/Steam/steamapps/common/Risk of Rain 2/BepInEx/plugins/WarBannerBeGone/manifest.json",
+		"/C/Program Files (x86)/Realtek/Audio/SetupAfterRebootService.InstallLog",
+		"/C/Users/Bloon/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sprite",
+			"originalXForce",
+			"AddForce",
+			"deltati",
+			"ground",
+			"getcomponent<",
+			"GetComponent<Rigidbody2D>()",
+			"target",
+			"verticalCameraSpeed",
+			"crouch",
+			"selectedHero",
+			"currentCard",
+			"SetCard",
+			"setcard",
+			"dropArea.currentCard",
+			"draggable",
+			"cardcontroller",
+			"draggable",
+			"oppositeLockArea",
+			"outerTwelveAreas",
+			"middle",
+			"currentdroparea",
+			"log",
+			"physics",
+			"m_groundcheck",
+			"sprite",
+			"stop"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"windyXForce",
+			"myRB2D",
+			"playerOnPlatform",
+			"verticalCameraTime",
+			"hero",
+			"currentCardController",
+			"SetAndCenterCardController",
+			"oppositeArea",
+			"outerSixteenAreas"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\Bloon\\Documents\\Unity\\Storm\\Assets\\Scripts"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/Scripts/PlayerControlScript.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"1377,1391": "; expected"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/ShootingController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								407,
+								407
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"430,434": "Invalid token 'void' in class, struct, or interface member declaration"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Scripts/BulletController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								195
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Scripts/CursorController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 202.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
