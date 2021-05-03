@@ -11,10 +11,9 @@ public class Gun : Item
 
     // basic variables
     public float damage;
-
-    // basic variables
     public float bulletForce;
     public float bulletsPerSecond;
+    public float bulletLifespan; 
 
     // methods
     public override void Action(Transform equipPoint){
@@ -23,10 +22,16 @@ public class Gun : Item
         {
             timer_useRate = 0f;
 
+            // Create bullet
             GameObject bullet = Instantiate(bulletPrefab, equipPoint.position, equipPoint.rotation);
+            if (bullet.GetComponent<BulletController>()) // TODO: should this be a try catch?
+            {             
+                bullet.GetComponent<BulletController>().Initialize(damage, bulletLifespan);
+            }
+            else { Debug.Log("Instantiated bulletPrefab in Gun " + name + " has no BulletController"); }
+            // Put bullet into motion
 			Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 			rb.AddForce(equipPoint.up * bulletForce, ForceMode2D.Impulse);
-           
         }
 
     }

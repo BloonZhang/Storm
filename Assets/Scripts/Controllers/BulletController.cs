@@ -7,6 +7,7 @@ public class BulletController : MonoBehaviour
 
     // Editable variables
     // TODO: assign these values using ScriptableObjects, instead of manually
+    public float damage = 1f;
     public float lifespan = 1.5f;
 
     // helper variables
@@ -24,11 +25,14 @@ public class BulletController : MonoBehaviour
     {
         // TODO: do damage to whatever it hit
 
-        // Note: I 
         Destroy();
     }
 
     // helper methods
+    public void Initialize(float damage, float lifespan)
+    {
+        this.damage = damage; this.lifespan = lifespan;
+    }
     void Destroy()
     {
         Destroy(gameObject);

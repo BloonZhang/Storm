@@ -19,3 +19,4 @@ MonoBehaviour:
   damage: 10
   bulletForce: 20
   bulletsPerSecond: 3
+  bulletLifespan: 0.5
