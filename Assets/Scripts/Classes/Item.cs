@@ -8,7 +8,6 @@ public class Item : ScriptableObject
 	public string description;
 	public Sprite sprite;
 
-
 	// helper variables
     public float timer_useRate = 0f;
 

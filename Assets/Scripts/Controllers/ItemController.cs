@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootingController : MonoBehaviour
+public class ItemController : MonoBehaviour
 {
-
 
     public Transform equipPoint;
     private Item equippedItem;
@@ -18,17 +17,14 @@ public class ShootingController : MonoBehaviour
             if(Input.GetButton("Fire1")){
                 useItem();
             }
-
             // Update timer(s)
             equippedItem.timer_useRate += Time.deltaTime;
 
         }
 
-
     }
 
     // Helper methods
-
     void useItem()
     {
         equippedItem.Action(equipPoint);
