@@ -15,11 +15,11 @@ TagManager:
   - 
   - Player
   - Enemy
+  - Obstacle
   - Terrain
   - 
   - 
-  - 
-  - 
+  - Hitbox
   - PlayerBullet
   - 
   - 

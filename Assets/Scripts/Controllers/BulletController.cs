@@ -23,7 +23,18 @@ public class BulletController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        // TODO: do damage to whatever it hit
+        // Note: We check for parent, because I'm thinking our hitboxes should always be children
+        if (col.transform.parent != null)
+        {
+            GameObject hit = col.transform.parent.gameObject;
+
+            // Check what kind of thing it hit, and then do whatever needs to be done
+            if (hit.GetComponent<ObstacleController>() != null) { 
+                //Debug.Log("hit an obstacle");
+                HitObstacle(hit.GetComponent<ObstacleController>()); 
+            }
+            // if (col.GetComponent<Enemy>() != null) { relevant enemy hit code }
+        }
 
         Destroy();
     }
@@ -36,5 +47,12 @@ public class BulletController : MonoBehaviour
     void Destroy()
     {
         Destroy(gameObject);
+    }
+
+    // hit something methods
+    void HitObstacle(ObstacleController obstacle)
+    {
+        obstacle.TakeDamage(damage);
+        Destroy();
     }
 }
