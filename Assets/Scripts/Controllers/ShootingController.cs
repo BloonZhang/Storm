@@ -4,45 +4,39 @@ using UnityEngine;
 
 public class ShootingController : MonoBehaviour
 {
-    // GameObject/Component variables
-	public Transform firePoint;
-	public GameObject bulletPrefab;    // Assigned through SO
 
-    private Gun equippedWeapon;
 
-    // helper variables
-    private float timer_bulletsPerSecond = 0f;
+    public Transform equipPoint;
+    private Item equippedItem;
 
     // Update is called once per frame
     void Update()
     {
-        // Update timer(s)
-        timer_bulletsPerSecond += Time.deltaTime;
 
         // Fire input
-        if(equippedWeapon){
+        if(equippedItem){
             if(Input.GetButton("Fire1")){
-                // Check to see if we can fire
-                if (timer_bulletsPerSecond > (1f/equippedWeapon.bulletsPerSecond))
-                {
-                    timer_bulletsPerSecond = 0f;
-                    Shoot(firePoint);
-                }
+                useItem();
             }
 
+            // Update timer(s)
+            equippedItem.timer_useRate += Time.deltaTime;
+
         }
+
 
     }
 
     // Helper methods
-    void Shoot(Transform firePoint)
+
+    void useItem()
     {
-        equippedWeapon.Shoot(firePoint);
+        equippedItem.Action(equipPoint);
     }
 
-    public void EquipNewWeapon(Gun newWeapon)  // TODO: make it accept more than just Gun  // TODO: currently public for using button to test
+    public void EquipNewItem(Item newItem)  // TODO: make it accept more than just Gun  // TODO: currently public for using button to test
     {
-        equippedWeapon = newWeapon;
-        GetComponent<SpriteRenderer>().sprite = equippedWeapon.sprite;
+        equippedItem = newItem;
+        GetComponent<SpriteRenderer>().sprite = equippedItem.sprite;
     }
 }
