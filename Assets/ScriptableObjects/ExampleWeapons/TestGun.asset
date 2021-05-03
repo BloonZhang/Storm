@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 599bd41e5dd03de47a33934e6109cb31, type: 3}
   m_Name: TestGun
   m_EditorClassIdentifier: 
+  id: 0
+  description: 
   sprite: {fileID: 21300000, guid: 838b7f81c0161c642a0f7177c7dbda83, type: 3}
-  name: gun more like dumb
+  bulletPrefab: {fileID: 7117155570389657351, guid: 36fced658c849df4e8f8ef1d102852ae, type: 3}
   damage: 10
-  bulletPrefab: {fileID: 32062808751907011, guid: 36fced658c849df4e8f8ef1d102852ae, type: 3}
   bulletForce: 20
   bulletsPerSecond: 3

@@ -15,6 +15,7 @@ public class ItemController : MonoBehaviour
         // Fire input
         if(equippedItem){
             if(Input.GetButton("Fire1")){
+                // Debug.Log("Used item");
                 useItem();
             }
             // Update timer(s)
