@@ -3,26 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Gun", menuName = "ScriptableObjects/Gun")]
-public class Gun : ScriptableObject
+public class Gun : Item
 {
 
-	// GameObject/component variables
-    public Sprite sprite;
+	// GameObject/Component variables
+	public GameObject bulletPrefab;    // Assigned through SO
 
     // basic variables
     public float damage;
-    
-    // GameObject/component variables
-    public GameObject bulletPrefab;
-
-    // basic variables
     public float bulletForce;
     public float bulletsPerSecond;
+    public float bulletLifespan; 
 
     // methods
-    public void Shoot(Transform firePoint){
-    	GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-		Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-		rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+    public override void Action(Transform equipPoint){
+
+         if (timer_useRate > (1f/bulletsPerSecond))
+        {
+            timer_useRate = 0f;
+
+            // Create bullet
+            GameObject bullet = Instantiate(bulletPrefab, equipPoint.position, equipPoint.rotation);
+            if (bullet.GetComponent<BulletController>()) // TODO: should this be a try catch?
+            {             
+                bullet.GetComponent<BulletController>().Initialize(damage, bulletLifespan);
+            }
+            else { Debug.Log("Instantiated bulletPrefab in Gun " + name + " has no BulletController"); }
+            // Put bullet into motion
+			Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+			rb.AddForce(equipPoint.up * bulletForce, ForceMode2D.Impulse);
+        }
+
     }
 }

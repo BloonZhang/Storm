@@ -7,6 +7,7 @@ public class BulletController : MonoBehaviour
 
     // Editable variables
     // TODO: assign these values using ScriptableObjects, instead of manually
+    public float damage = 1f;
     public float lifespan = 1.5f;
 
     // helper variables
@@ -22,15 +23,36 @@ public class BulletController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        // TODO: do damage to whatever it hit
+        // Note: We check for parent, because I'm thinking our hitboxes should always be children
+        if (col.transform.parent != null)
+        {
+            GameObject hit = col.transform.parent.gameObject;
 
-        // Note: I 
+            // Check what kind of thing it hit, and then do whatever needs to be done
+            if (hit.GetComponent<ObstacleController>() != null) { 
+                //Debug.Log("hit an obstacle");
+                HitObstacle(hit.GetComponent<ObstacleController>()); 
+            }
+            // if (col.GetComponent<Enemy>() != null) { relevant enemy hit code }
+        }
+
         Destroy();
     }
 
     // helper methods
+    public void Initialize(float damage, float lifespan)
+    {
+        this.damage = damage; this.lifespan = lifespan;
+    }
     void Destroy()
     {
         Destroy(gameObject);
+    }
+
+    // hit something methods
+    void HitObstacle(ObstacleController obstacle)
+    {
+        obstacle.TakeDamage(damage);
+        Destroy();
     }
 }
