@@ -15,20 +15,25 @@ public class TeleportAbilityController : MonoBehaviour
     public void TriggerAbility()
     {
         Debug.Log("teleport");
-        // Get mouse position
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        Vector3 vectorToTeleport;
 
-        // Get normalized vector towards mouse position
-        Vector3 vectorTowardsMouse = new Vector3(mousePosition.x - transform.position.x,
-                                                    mousePosition.y - transform.position.y,
-                                                    0);
-        vectorTowardsMouse = Vector3.Normalize(vectorTowardsMouse);
-        Debug.Log(vectorTowardsMouse);
+        // if move input, teleport to that direction
+        if (Input.GetAxisRaw("Horizontal") != 0f || Input.GetAxisRaw("Vertical") != 0f)
+        {
+            vectorToTeleport = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0);
+        }
+        // if no input, teleport to mouse
+        else
+        {
+            Vector3 mousePosition = Input.mousePosition;
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            vectorToTeleport = new Vector3(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y, 0);
+        }
+        vectorToTeleport = Vector3.Normalize(vectorToTeleport);
 
-        // Teleport player towards mouse position
+        // Actually teleport player
         // TODO: move player if player teleports into a wall or something
-        transform.parent.position = transform.parent.position + vectorTowardsMouse * teleportDistance;
+        transform.parent.position = transform.parent.position + vectorToTeleport * teleportDistance;
     }
 
 
