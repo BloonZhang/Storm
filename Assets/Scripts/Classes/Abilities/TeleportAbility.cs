@@ -28,7 +28,7 @@ public class TeleportAbility : ActiveAbility
         if (controller == null) { Debug.Log("Error in Initialize() for TeleportAbility.cs"); return; }
 
         // Set up TeleportAbilityController's variables based on ScriptableObject
-        controller.teleportDistance = this.teleportDistance;
+        controller.maxTeleportDistance = this.teleportDistance;
     }
 
     public override void TriggerAbility()
