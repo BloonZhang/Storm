@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7da50786cf3a74caee5ec9d551dc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportDistance: 0
+  maxTeleportDistance: 0
 --- !u!1 &911224968
 GameObject:
   m_ObjectHideFlags: 0
