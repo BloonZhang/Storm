@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25788468b39aca94b9f754a461c65d82, type: 3}
-  m_Name: New Teleport Ability
+  m_Name: LongTeleport
   m_EditorClassIdentifier: 
-  abilityName: New Default Ability
-  abilityBaseCooldown: 3
+  abilityName: Long Teleport
+  abilityBaseCooldown: 4
   abilityIcon: {fileID: 21300000, guid: 5911b52ebf9ef874aa3689fb566ac64d, type: 3}
   teleportDistance: 3

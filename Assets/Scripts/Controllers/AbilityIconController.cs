@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;   // We are using the UI
 using TMPro;            // Using TextMeshPro instead of built-in unity text
 
-public class AbilityController : MonoBehaviour
+public class AbilityIconController : MonoBehaviour
 {
 
     public string abilityButtonAxisName = "Fire1";
